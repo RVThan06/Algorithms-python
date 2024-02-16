@@ -14,7 +14,7 @@
 import time
 
 
-def merge_sort(lst: list) -> None:
+def divide_merge(lst: list) -> None:
     """To divide the array and sort using merge()."""
 
     if len(lst) > 1:
@@ -25,8 +25,8 @@ def merge_sort(lst: list) -> None:
         left = lst[mid:len(lst)]
 
         # sort the list object directly so no need to return a list
-        merge_sort(left)
-        merge_sort(right)
+        divide_merge(left)
+        divide_merge(right)
         # upon dividing merge the sorted list
         merge(lst, left, right)
 
@@ -65,7 +65,7 @@ my_list = [34,23,56,23,67,23,11,36,55]
 print("Before sorting")
 print(my_list)
 start = time.time()
-merge_sort(my_list)
+divide_merge(my_list)
 end = time.time()
 print(f"After sorting Time elapsed: {end - start}")
 print(my_list)
@@ -75,7 +75,7 @@ new_list = [x for x in range(1000000,0,-1)]
 print("Before sorting")
 print(new_list[999990:])
 start = time.time()
-merge_sort(new_list)
+divide_merge(new_list)
 end = time.time()
 print(f"After sorting Time elapsed: {end - start}s")
 print(new_list[999990:])
