@@ -4,5 +4,6 @@
 1. Bubble sort
 2. Insertion sort
 3. Merge sort
+4. Quick sort
 
 ### More algorithms to be built and added
