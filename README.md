@@ -7,6 +7,12 @@
 4. Quick sort
 5. Heap sort
 6. Selection sort
-7. 
+
+# Searching algorithms
+1. Linear search
+2. Binary search
+3. Interpolation search
+4. Jump search
+5. Exponential search
 
 ### More algorithms to be built and added
