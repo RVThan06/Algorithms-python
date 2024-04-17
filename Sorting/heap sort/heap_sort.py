@@ -43,7 +43,7 @@ def heapify(index:int, my_heap: list) -> None:
 
 
 def heap_sort(my_heap: list) -> list:
-    """To delete a node for a given value."""
+    """To heap sort the list."""
 
     index = 0
     sorted_list = []
